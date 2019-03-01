@@ -1,0 +1,205 @@
+body{
+	margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    /*padding: 0;*/
+    background-color: rgb(0,30,50);
+    font-family: Arial;
+    overflow: hidden;
+}
+	/*img{
+		display: block;
+	}*/
+	a:link {
+		color: DeepSkyBlue;
+	}
+	a:visited {
+		color: DeepSkyBlue;
+	}
+	a:hover {
+		color: white;
+	}
+	a:active {
+		color: DeepSkyBlue;
+	}
+
+
+/*#fondo{ /*<section>?????????????????????????????????????????????????????????????
+	border-radius: solid red 2px;
+	background-color: rgb(0,30,50);
+	height: 100%;
+}*/
+
+#informacion{
+	position: absolute;
+	display: none;
+	width: 0px; /*350px*/
+	height: 120px;
+	top: 1vh;
+	right: 0vh;
+	border: solid limegreen 5px;
+	border-radius: 25px 0px 0px 25px;
+	color: orange;
+	overflow: hidden;
+}
+#informacion:hover{
+	border-color: lime;
+	box-shadow:0px 0px 5px limegreen;
+}
+#informacion > p{
+	margin-left: 20px;
+}
+
+.infobox{
+	text-align: center;
+	background-color: transparent/*rgba(255,255,255, 30%) rgba(255,250,220, 60%)*/;
+	border: 3px solid rgb(30,50,255);
+	
+	margin: 15px auto;
+	border-radius: 10px 10px 20px 20px;
+	/*overflow: hidden;*/
+	color: Lime;
+}
+
+.letrero{
+	margin: 0px auto 5px;
+	border: solid rgb(150,170,200) 2px;
+	border-top: 0px;
+	width: 500px;
+	background-color: rgb(204,255,255);
+	border-radius: 0px 0px 10px 10px;
+	text-shadow:0px 0px 2px rgb(0, 29, 255);
+	color: rgb(0, 10, 130);
+	user-select: none;
+	-moz-user-select: none;
+}
+
+
+.letrero:hover{
+   border: solid DeepSkyBlue 3px;
+   cursor: pointer;
+   cursor: hand;
+}
+
+/*************************************************************/
+						/*CABECERA*/
+/*************************************************************/
+
+#overlay{
+	/*width: 100%;ARREGLAR (desvirtua el marco a la derecha)*/
+	background-color: rgb(0,30,50);
+	/*background-size: contain;*/
+	/*border: solid DeepSkyBlue 2px;
+	border-radius: 5px;*/
+	height: 18vh;/*180px*/
+	/*z-index: 3;*/
+	/*si se le da width no puede ir con 0 margenes a los lados*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0px 7px 20px rgb(0, 29, 255);
+}
+
+#imagen{
+	/*border: solid red 1px;*/
+	border-radius: 50%;
+	background-image: url('../img/yo.PNG');
+	background-size: 100% 100%;
+	height: 100%;
+	width: 9vw;
+	margin: 0px auto;
+	border: none;
+	box-shadow: 0px 0px 20px rgb(0, 29, 255);
+}
+
+
+	/*float: right; /*unbinds itself from continer div and takes body perspective*/
+	/*width: 150px;
+	height: 190px;
+	/*object-fit: cover;
+width: 100%;
+height: 250px;
+	o
+background-image: url("your/url/here");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+/*************************************************************/
+						/*POSICIONAMIENTO*/
+/*************************************************************/
+
+#pannel{
+	position: absolute;
+	height: 75%;
+	/*margin-left: -850px; HALF THE WIDTH so that is centered
+	left: 50%; /* 50% so that is centered*/
+	width: 80vw;
+	left: 50%; 
+	transform: translateX(-40%); 
+	padding-right: 20%;
+    margin: 0 auto;
+    top: 21vh; /**210px/
+    /*z-index: 2;*/
+    overflow-x: none;
+    overflow-y: scroll;
+    
+}
+
+/****************************************************************************************************/
+/*											ICONOS													*/
+/****************************************************************************************************/
+.fab, .fa-user-circle{ /*fas*/
+	display: inline-block;
+	position: absolute;
+	z-index: 3;
+	top: 3vh;
+}
+.fa-github, .fa-twitter{
+	top: 11vh;
+}
+
+.fa-github{
+	left: 35vw;
+	color: white;
+}
+.fa-github:hover{
+	text-shadow:0px 0px 5px white;
+}
+.fa-twitter{
+	right: 35vw;
+	color: deepskyblue;
+}
+.fa-twitter:hover{
+	text-shadow:0px 0px 5px deepskyblue;
+}
+.fa-linkedin-in{
+	left: 25vw;
+	color: steelblue;
+}
+.fa-linkedin-in:hover{
+	text-shadow:0px 0px 5px rgb(91, 143, 185);
+}
+.fa-user-circle{
+	right: 25vw;
+	color: limegreen;
+}
+.fa-user-circle:hover{
+	color: lime;
+	text-shadow:0px 0px 5px limegreen;
+}
+
+
+.fa-chevron-down{
+	display: inline-block;
+	font-size:24px;
+	position: absolute;
+	z-index: 3;
+	color: red;
+	top: 15vh;
+	left: 10vw;
+}
+.fa-chevron-down:hover{
+	text-shadow:0px 0px 15px blueviolet;
+}

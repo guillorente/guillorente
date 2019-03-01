@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Guillermo Llorente</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	</head>
+
+
+
+	<body>
+
+		<script>
+			function loadHTML(){
+				var xhr= new XMLHttpRequest();
+				xhr.open('GET', 'pannels/notAvailable.html', true);
+				xhr.onreadystatechange= function() {
+						if (this.readyState!==4) return;
+						if (this.status!==200) return;
+						document.getElementsByTagName('body')[0].insertAdjacentHTML( 'afterbegin', this.responseText);
+				};
+				xhr.send();
+		}
+		loadHTML();
+		</script>
+
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		
+	</body>
+</html>
